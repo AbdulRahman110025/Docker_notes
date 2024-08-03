@@ -25,5 +25,11 @@ Dockerfile -> Docker Image -> Docker container
 Above Formula shows the life cycle behind container..
 = to build docker image from Docker file the command is (Docker build)
 = to make container from image the command is (Docker run)
-# Some important command
+## Some important command
        docker run -d -p 80:80 --name nginx-box nginx:latest
+-d: Runs the container in detached mode, meaning it runs in the background and does not block your terminal.
+-p 80:80: Maps port 80 of the container to port 80 on the host, so you can access the Nginx server via the host's IP address.
+--name nginx-box: Assigns the name nginx-box to the container, which makes it easier to manage.
+nginx:latest: Specifies the image to use (nginx) and the tag (latest).
+### nginx:latest 
+When you use the tag nginx:latest in your Docker commands, you're specifying that you want to use the most up-to-date version of Nginx that has been published to Docker Hub
