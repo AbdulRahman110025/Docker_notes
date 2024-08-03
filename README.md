@@ -17,4 +17,13 @@ DockerCLI:
 11)  logout      Log out from a registry
 12)  search      Search Docker Hub for images
 13)  version     Show the Docker version information
-14)  info        Display system-wide information
+15)  info        Display system-wide information
+
+# Process behind making containers:
+well there is a process of making containers . first there is dockerfile (2) docker Image (3) container. lets understand each one by one.
+Dockerfile -> Docker Image -> Docker container
+Above Formula shows the life cycle behind container..
+= to build docker image from Docker file the command is (Docker build)
+= to make container from image the command is (Docker run)
+# Some important command
+       docker run -d -p 80:80 --name nginx-box nginx:latest
