@@ -33,3 +33,5 @@ Above Formula shows the life cycle behind container..
 nginx:latest: Specifies the image to use (nginx) and the tag (latest).
 ### nginx:latest 
 When you use the tag nginx:latest in your Docker commands, you're specifying that you want to use the most up-to-date version of Nginx that has been published to Docker Hub
+                      "sudo chown username location"
+above command is used when there is an error running docker "ps command" and there is an permision denied in an given location.
